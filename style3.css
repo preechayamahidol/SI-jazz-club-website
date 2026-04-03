@@ -1,32 +1,34 @@
 body {
     margin: 0;
     font-family: 'Georgia', 'Times New Roman', serif;
-    background-color: #f4f1ea;
-    color: #2c2b28;
+    background-color: #0a0806;
+    color: #e0d6c5;
 }
 
 /* HEADER */
 header {
-    background: #300505;
+    background: #1a0505;
     padding: 25px 20px;
     text-align: center;
-    border-bottom: 2px solid #c9a44c;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    border-bottom: 2px solid #d4af37;
+    border-top: 1px solid #d4af37;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     letter-spacing: 1px;
 }
 
 header h1 {
     font-family: 'Georgia', 'Times New Roman', serif;
     font-size: 2.2em;
-    color: #ffffff;
+    color: #d4af37;
     margin-bottom: 10px;
     font-weight: normal;
     letter-spacing: 3px;
+    text-shadow: 1px 1px 0px #3a0808;
 }
 
 nav a {
     margin: 0 20px;
-    color: #8b7355;
+    color: #c9a97c;
     text-decoration: none;
     font-weight: normal;
     transition: 0.3s;
@@ -36,41 +38,49 @@ nav a {
 }
 
 nav a:hover {
-    color: #c9a44c;
+    color: #d4af37;
+    text-shadow: 0 0 4px rgba(212, 175, 55, 0.3);
 }
 
 /* HERO */
 .hero {
     height: 85vh;
-    background: linear-gradient(rgba(255, 255, 245, 0.75), rgba(244, 241, 234, 0.85)),
+    background: linear-gradient(rgba(26, 5, 5, 0.75), rgba(10, 8, 6, 0.85)),
                 url('https://i.pinimg.com/1200x/ef/f4/53/eff45343ea204abc9cdaf22fc5912762.jpg');
     background-size: cover;
     background-position: center 30%;
+    background-blend-mode: overlay;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     animation: fadeIn 1.8s ease-in;
+    border-bottom: 1px solid #d4af37;
 }
 
 .hero h2 {
     font-size: 3.5em;
-    color: #1f2b1f;
+    color: #d4af37;
     font-family: 'Georgia', 'Times New Roman', serif;
     font-weight: normal;
     letter-spacing: 4px;
     margin-bottom: 15px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 0px #1a0505;
 }
 
 .hero p {
     font-size: 1.2em;
     max-width: 600px;
-    color: #5a4a3a;
+    color: #e0d6c5;
     font-style: italic;
     font-family: 'Georgia', serif;
     line-height: 1.6;
+    background: rgba(26, 5, 5, 0.5);
+    padding: 12px 24px;
+    border-left: 2px solid #d4af37;
+    border-right: 2px solid #d4af37;
 }
 
 /* SECTIONS */
@@ -78,15 +88,16 @@ section {
     padding: 70px 20px;
     max-width: 1000px;
     margin: auto;
-    background: #ffffff;
+    background: #0f0b0a;
     margin-bottom: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border-radius: 2px;
+    border: 1px solid #2a1a1a;
 }
 
 h2 {
-    color: #1f2b1f;
-    border-bottom: 2px solid #c9a44c;
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
     padding-bottom: 12px;
     font-family: 'Georgia', 'Times New Roman', serif;
     font-weight: normal;
@@ -101,47 +112,49 @@ ul li {
     list-style-type: none;
     padding-left: 24px;
     position: relative;
-    color: #3a3528;
+    color: #e0d6c5;
     font-size: 1.05em;
 }
 
 ul li:before {
     content: "✦";
-    color: #c9a44c;
+    color: #d4af37;
     position: absolute;
     left: 0;
     font-size: 1.1em;
 }
 
-/* BUTTONS / LINKS (Classy style) */
+/* BUTTONS / LINKS */
 a, button {
     transition: all 0.25s ease;
 }
 
 button {
     background: transparent;
-    border: 1px solid #c9a44c;
+    border: 1px solid #d4af37;
     padding: 10px 24px;
-    color: #1f2b1f;
+    color: #d4af37;
     font-family: 'Georgia', serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+    background: rgba(26, 5, 5, 0.6);
 }
 
 button:hover {
-    background: #c9a44c;
-    color: #ffffff;
-    border-color: #c9a44c;
+    background: #d4af37;
+    color: #1a0505;
+    border-color: #d4af37;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 30px 20px;
-    background: #ffffff;
-    border-top: 1px solid #e0d6c5;
-    color: #8b7355;
+    background: #1a0505;
+    border-top: 1px solid #d4af37;
+    border-bottom: 1px solid #2a1a1a;
+    color: #c9a97c;
     font-size: 0.85em;
     letter-spacing: 1px;
     font-family: 'Georgia', serif;
@@ -153,12 +166,31 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* OLD MONEY TOUCHES */
+/* BURGUNDY, BLACK & GOLD TOUCHES */
 .hero, section, header {
     transition: all 0.2s ease;
 }
 
 ::selection {
-    background: #c9a44c;
-    color: #ffffff;
+    background: #d4af37;
+    color: #1a0505;
+}
+
+/* Optional: Add a subtle pattern overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(212, 175, 55, 0.02) 0px,
+        rgba(212, 175, 55, 0.02) 2px,
+        transparent 2px,
+        transparent 8px
+    );
+    z-index: 9999;
 }
